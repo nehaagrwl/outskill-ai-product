@@ -2,19 +2,20 @@
 export const profileData = {
   // Personal Information
   name: "Neha Agrawal",
-  title: "Product Manager & Analytics Professional",
-  tagline: "Transforming data into actionable insights and building products that drive growth",
-  email: "nehaagrwl@hotmail.com",
+  title: "Product & Analytics Professional",
+  tagline: "Transforming data into strategic insights and building products that drive growth through AI-powered solutions",
+  email: "nehaagrwl24@gmail.com",
   location: "Bengaluru, Karnataka, India",
   profileImage: "https://customer-assets.emergentagent.com/job_9118a4f3-f392-4c35-8f17-c58dd5f217c1/artifacts/kso2pug1_Agrawal-Neha.jpg",
+  resumeLink: "https://customer-assets.emergentagent.com/job_9118a4f3-f392-4c35-8f17-c58dd5f217c1/artifacts/nagx90wf_NehaAgrawal_resume_updated.pdf",
 
   // About Section
   about: {
-    summary: "Highly accomplished Product Manager with 7+ years of experience in technology and healthcare. I specialize in translating complex data into strategic product decisions, having led cross-functional teams at B2B SaaS companies and early-stage startups. With an MBA from UCLA Anderson and a strong technical background, I bridge the gap between business strategy and technical execution.",
+    summary: "Highly accomplished Product and Analytics professional with 6+ years of experience in technology and healthcare. I specialize in translating complex data into strategic product decisions, having led cross-functional teams at B2B SaaS companies and early-stage startups. With an MBA from UCLA Anderson and a strong technical background in AI/ML, I bridge the gap between business strategy and technical execution while staying current with Gen AI innovations.",
     highlights: [
       "Full-Time MBA from UCLA Anderson School of Management",
-      "7+ years in Product Management and Data Analytics", 
-      "Led products that increased revenue by 20-25%",
+      "6+ years in Product Management and Data Analytics", 
+      "Led projects that increased revenue by 20-25%",
       "Winner of $50K pitch competitions",
       "Expert in AI/ML, Python, SQL, and data visualization"
     ]
@@ -36,7 +37,8 @@ export const profileData = {
       "Power BI & QuickSight", 
       "Statistical Analysis",
       "AI/ML Implementation",
-      "Data Visualization"
+      "Data Visualization",
+      "Gen AI Tools & LLMs"
     ],
     business: [
       "Market Research",
@@ -95,7 +97,7 @@ export const profileData = {
       achievements: [
         "Spearheaded Looker dashboard development, boosting team productivity by 40%",
         "Led A/B testing initiatives that significantly increased click-through rates",
-        "Managed end-to-end projects for 20+ global utilities",
+        "Managed end-to-end proof of concept projects for 20+ global utilities",
         "Increased annual revenue by 20-25% through strategic product improvements",
         "Retained $1M ARR client through feature enhancement and optimization"
       ]
@@ -141,14 +143,14 @@ export const profileData = {
     },
     {
       id: 2,
-      title: "EV Charger Optimization Platform",
-      description: "Led development of data analytics platform to optimize electric vehicle charger utilization and operations.",
+      title: "Bidgely's Proof of Concept Platform",
+      description: "Led end-to-end proof of concept projects for global utilities, defining scope to address utility needs and generating actionable insights.",
       outcomes: [
-        "20% improvement in charger utilization rates",
-        "Power BI dashboard deployed across 15+ locations",
-        "$6M in federal grant funding secured"
+        "Managed 20+ global utility clients successfully",
+        "Increased annual revenue by 20-25%",
+        "Led team of analysts to deliver comprehensive presentations"
       ],
-      technologies: ["Power BI", "Data Analytics", "Operations Research"]
+      technologies: ["Data Analytics", "Client Management", "Business Intelligence"]
     },
     {
       id: 3,
@@ -168,8 +170,16 @@ export const profileData = {
     "Coursera Gen AI with LLMs",
     "Udacity Product Manager Nanodegree",
     "Udacity Predictive Analytics Nanodegree", 
-    "Cognitir Introduction to Product Management"
-  ]
+    "Cognitir Introduction to Product Management",
+    "Outskill Gen AI Mastermind"
+  ],
+
+  // Current Learning
+  currentLearning: {
+    title: "Currently Upskilling in Gen AI",
+    description: "Actively learning and implementing the latest Gen AI tools and techniques to stay at the forefront of AI-powered product development and analytics.",
+    areas: ["Large Language Models", "AI Product Integration", "Prompt Engineering", "AI-Driven Analytics"]
+  }
 };
 
 export default profileData;
