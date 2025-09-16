@@ -14,7 +14,7 @@ const Projects = () => {
           <h2 className="text-4xl font-light text-foreground mb-4">
             Featured Projects
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+          <p className="text-lg text-highly-visible max-w-2xl mx-auto font-medium">
             Key projects that demonstrate my impact in product management and analytics
           </p>
         </div>
@@ -54,7 +54,7 @@ const Projects = () => {
                         {project.outcomes.map((outcome, outcomeIndex) => (
                           <div key={outcomeIndex} className="flex items-start gap-2">
                             <div className="w-1.5 h-1.5 bg-primary-bright rounded-full mt-2.5 flex-shrink-0"></div>
-                            <p className="text-sm text-muted-foreground leading-relaxed font-medium">{outcome}</p>
+                            <p className="text-sm text-readable leading-relaxed font-medium">{outcome}</p>
                           </div>
                         ))}
                       </div>
@@ -84,19 +84,19 @@ const Projects = () => {
         <div className="mt-16 grid md:grid-cols-4 gap-6 text-center">
           <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-primary/20">
             <div className="text-3xl font-bold text-primary-bright mb-2">$6M+</div>
-            <div className="text-muted-foreground text-sm font-semibold">Funding Secured</div>
+            <div className="text-readable text-sm font-semibold">Funding Secured</div>
           </div>
           <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-secondary/20">
             <div className="text-3xl font-bold text-secondary-bright mb-2">40%</div>
-            <div className="text-muted-foreground text-sm font-semibold">Productivity Increase</div>
+            <div className="text-readable text-sm font-semibold">Productivity Increase</div>
           </div>
           <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-primary/20">
             <div className="text-3xl font-bold text-primary-bright mb-2">20+</div>
-            <div className="text-muted-foreground text-sm font-semibold">Global Utilities</div>
+            <div className="text-readable text-sm font-semibold">Global Utilities</div>
           </div>
           <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-secondary/20">
             <div className="text-3xl font-bold text-secondary-bright mb-2">25%</div>
-            <div className="text-muted-foreground text-sm font-semibold">Revenue Growth</div>
+            <div className="text-readable text-sm font-semibold">Revenue Growth</div>
           </div>
         </div>
 

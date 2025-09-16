@@ -28,11 +28,11 @@ const Footer = () => {
           {/* Brand & Description */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-foreground">{profileData.name}</h3>
-            <p className="text-muted-foreground leading-relaxed font-medium">
+            <p className="text-readable leading-relaxed font-medium">
               Product & Analytics Professional passionate about transforming 
               data into strategic insights and building AI-powered products that drive growth.
             </p>
-            <div className="flex items-center gap-2 text-muted-foreground">
+            <div className="flex items-center gap-2 text-readable">
               <MapPin size={16} className="text-primary-bright" />
               <span className="text-sm font-medium">{profileData.location}</span>
             </div>
@@ -44,31 +44,31 @@ const Footer = () => {
             <div className="flex flex-col space-y-2">
               <button 
                 onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
-                className="text-muted-foreground hover:text-primary-bright transition-colors text-left font-medium"
+                className="text-readable hover:text-primary-bright transition-colors text-left font-medium"
               >
                 About Me
               </button>
               <button 
                 onClick={() => document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })}
-                className="text-muted-foreground hover:text-primary-bright transition-colors text-left font-medium"
+                className="text-readable hover:text-primary-bright transition-colors text-left font-medium"
               >
                 Experience
               </button>
               <button 
                 onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}
-                className="text-muted-foreground hover:text-primary-bright transition-colors text-left font-medium"
+                className="text-readable hover:text-primary-bright transition-colors text-left font-medium"
               >
                 Skills
               </button>
               <button 
                 onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
-                className="text-muted-foreground hover:text-primary-bright transition-colors text-left font-medium"
+                className="text-readable hover:text-primary-bright transition-colors text-left font-medium"
               >
                 Projects
               </button>
               <button 
                 onClick={handleResumeDownload}
-                className="text-muted-foreground hover:text-primary-bright transition-colors text-left flex items-center gap-1 font-medium"
+                className="text-readable hover:text-primary-bright transition-colors text-left flex items-center gap-1 font-medium"
               >
                 <Download size={14} />
                 Resume
@@ -82,14 +82,14 @@ const Footer = () => {
             <div className="space-y-3">
               <button 
                 onClick={handleEmailClick}
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary-bright transition-colors"
+                className="flex items-center gap-3 text-readable hover:text-primary-bright transition-colors"
               >
                 <Mail size={16} />
                 <span className="text-sm font-medium">{profileData.email}</span>
               </button>
               <button 
                 onClick={handleLinkedInClick}
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary-bright transition-colors"
+                className="flex items-center gap-3 text-readable hover:text-primary-bright transition-colors"
               >
                 <Linkedin size={16} />
                 <span className="text-sm font-medium">LinkedIn Profile</span>
@@ -116,13 +116,13 @@ const Footer = () => {
 
         <div className="border-t-2 border-primary/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2 text-muted-foreground text-sm">
+            <div className="flex items-center gap-2 text-readable text-sm">
               <span className="font-medium">© {currentYear} {profileData.name}. Made with</span>
               <Heart size={14} className="text-accent-bright" />
               <span className="font-medium">and React</span>
             </div>
             
-            <div className="flex items-center gap-6 text-sm text-muted-foreground">
+            <div className="flex items-center gap-6 text-sm text-readable">
               <button 
                 onClick={scrollToTop}
                 className="hover:text-primary-bright transition-colors font-medium"
