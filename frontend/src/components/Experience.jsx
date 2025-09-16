@@ -12,7 +12,7 @@ const Experience = () => {
           <h2 className="text-4xl font-light text-foreground mb-4">
             Professional Experience
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+          <p className="text-lg text-highly-visible max-w-2xl mx-auto font-medium">
             A journey through product management and analytics roles at innovative companies
           </p>
         </div>
@@ -52,7 +52,7 @@ const Experience = () => {
                           {exp.company}
                         </h4>
 
-                        <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-4">
+                        <div className="flex flex-wrap gap-4 text-sm text-readable mb-4">
                           <div className="flex items-center gap-1 font-medium">
                             <CalendarDays size={14} className="text-primary-bright" />
                             {exp.duration}
@@ -69,7 +69,7 @@ const Experience = () => {
                         {exp.achievements.map((achievement, achievementIndex) => (
                           <div 
                             key={achievementIndex}
-                            className="flex items-start gap-3 text-muted-foreground"
+                            className="flex items-start gap-3 text-readable"
                           >
                             <CheckCircle size={16} className="text-primary-bright mt-0.5 flex-shrink-0" />
                             <p className="text-sm leading-relaxed font-medium">{achievement}</p>
@@ -89,15 +89,15 @@ const Experience = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-primary/20">
               <div className="text-3xl font-bold text-primary-bright mb-2">6+</div>
-              <div className="text-muted-foreground font-semibold">Years of Experience</div>
+              <div className="text-readable font-semibold">Years of Experience</div>
             </div>
             <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-secondary/20">
               <div className="text-3xl font-bold text-secondary-bright mb-2">4</div>
-              <div className="text-muted-foreground font-semibold">Companies</div>
+              <div className="text-readable font-semibold">Companies</div>
             </div>
             <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-primary/20">
               <div className="text-3xl font-bold text-primary-bright mb-2">25%</div>
-              <div className="text-muted-foreground font-semibold">Avg Revenue Growth</div>
+              <div className="text-readable font-semibold">Avg Revenue Growth</div>
             </div>
           </div>
         </div>

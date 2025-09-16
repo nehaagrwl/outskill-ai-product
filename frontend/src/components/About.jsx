@@ -21,7 +21,7 @@ const About = () => {
               <h2 className="text-4xl font-light text-foreground mb-6">
                 About Me
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-highly-visible leading-relaxed font-medium">
                 {profileData.about.summary}
               </p>
             </div>
@@ -36,7 +36,7 @@ const About = () => {
                   <h3 className="text-lg font-semibold text-foreground mb-2">
                     {profileData.currentLearning.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  <p className="text-readable text-sm leading-relaxed mb-3 font-medium">
                     {profileData.currentLearning.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -61,14 +61,14 @@ const About = () => {
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-2">
                       <h4 className="font-semibold text-foreground">{edu.degree}</h4>
-                      <span className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full font-medium">
+                      <span className="text-sm text-readable bg-muted px-3 py-1 rounded-full font-medium">
                         {edu.year}
                       </span>
                     </div>
-                    <p className="text-muted-foreground font-medium mb-2">{edu.school}</p>
-                    <p className="text-sm text-muted-foreground mb-3">{edu.location}</p>
+                    <p className="text-readable font-medium mb-2">{edu.school}</p>
+                    <p className="text-sm text-readable mb-3">{edu.location}</p>
                     {edu.concentration && (
-                      <p className="text-sm text-muted-foreground mb-2">
+                      <p className="text-sm text-readable mb-2">
                         <span className="font-semibold">Concentration:</span> {edu.concentration}
                       </p>
                     )}
@@ -101,7 +101,7 @@ const About = () => {
                     <div className="p-2 bg-primary/20 rounded-lg border border-primary/30">
                       <item.icon size={20} className="text-primary-bright" />
                     </div>
-                    <p className="text-muted-foreground leading-relaxed font-medium">{item.text}</p>
+                    <p className="text-readable leading-relaxed font-medium">{item.text}</p>
                   </div>
                 ))}
               </div>
@@ -116,7 +116,7 @@ const About = () => {
                     key={index}
                     className="p-4 bg-card rounded-lg shadow-sm border-l-4 border-primary hover:shadow-md transition-shadow"
                   >
-                    <p className="text-muted-foreground font-semibold">{cert}</p>
+                    <p className="text-readable font-semibold">{cert}</p>
                   </div>
                 ))}
               </div>

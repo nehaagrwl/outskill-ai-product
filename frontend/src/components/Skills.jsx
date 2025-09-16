@@ -33,7 +33,7 @@ const Skills = () => {
           <h2 className="text-4xl font-light text-foreground mb-4">
             Skills & Expertise
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+          <p className="text-lg text-highly-visible max-w-2xl mx-auto font-medium">
             A comprehensive toolkit spanning product strategy, technical analysis, and business growth
           </p>
         </div>
@@ -58,7 +58,7 @@ const Skills = () => {
                       className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg hover:bg-primary/10 transition-colors border border-border"
                     >
                       <CheckCircle size={16} className="text-primary-bright flex-shrink-0" />
-                      <span className="text-muted-foreground font-semibold text-sm">{skill}</span>
+                      <span className="text-readable font-semibold text-sm">{skill}</span>
                     </div>
                   ))}
                 </div>
@@ -74,7 +74,7 @@ const Skills = () => {
               <h3 className="text-2xl font-semibold text-foreground mb-4">
                 Technical Proficiency
               </h3>
-              <p className="text-muted-foreground leading-relaxed mb-6 font-medium">
+              <p className="text-highly-visible leading-relaxed mb-6 font-medium">
                 Proficient in the full spectrum of product management and data analytics tools, 
                 from strategic planning to technical implementation and performance measurement.
               </p>
@@ -90,19 +90,19 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center p-4 bg-primary/10 rounded-xl border-2 border-primary/30">
                 <div className="text-lg font-bold text-primary-bright mb-1">Product Strategy</div>
-                <div className="text-sm text-muted-foreground font-semibold">Core Strength</div>
+                <div className="text-sm text-readable font-semibold">Core Strength</div>
               </div>
               <div className="text-center p-4 bg-secondary/10 rounded-xl border-2 border-secondary/30">
                 <div className="text-lg font-bold text-secondary-bright mb-1">Data Analytics</div>
-                <div className="text-sm text-muted-foreground font-semibold">Expert Level</div>
+                <div className="text-sm text-readable font-semibold">Expert Level</div>
               </div>
               <div className="text-center p-4 bg-primary/10 rounded-xl border-2 border-primary/30">
                 <div className="text-lg font-bold text-primary-bright mb-1">Team Leadership</div>
-                <div className="text-sm text-muted-foreground font-semibold">Proven Track Record</div>
+                <div className="text-sm text-readable font-semibold">Proven Track Record</div>
               </div>
               <div className="text-center p-4 bg-secondary/10 rounded-xl border-2 border-secondary/30">
                 <div className="text-lg font-bold text-secondary-bright mb-1">Gen AI Tools</div>
-                <div className="text-sm text-muted-foreground font-semibold">Current Focus</div>
+                <div className="text-sm text-readable font-semibold">Current Focus</div>
               </div>
             </div>
           </div>

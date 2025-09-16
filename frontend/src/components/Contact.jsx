@@ -65,7 +65,7 @@ const Contact = () => {
           <h2 className="text-4xl font-light text-foreground mb-4">
             Let's Connect
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+          <p className="text-lg text-highly-visible max-w-2xl mx-auto font-medium">
             I'm always interested in new opportunities, collaborations, and interesting conversations about product management, analytics, and AI innovations.
           </p>
         </div>
@@ -75,7 +75,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-foreground mb-6">Get in Touch</h3>
-              <p className="text-muted-foreground leading-relaxed mb-8 font-medium">
+              <p className="text-highly-visible leading-relaxed mb-8 font-medium">
                 Whether you're looking for a product manager, have a project in mind, 
                 or just want to connect about the industry and AI innovations, I'd love to hear from you.
               </p>
@@ -92,7 +92,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Email</p>
-                  <p className="text-muted-foreground text-sm font-medium">{profileData.email}</p>
+                  <p className="text-readable text-sm font-medium">{profileData.email}</p>
                 </div>
               </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Location</p>
-                  <p className="text-muted-foreground text-sm font-medium">{profileData.location}</p>
+                  <p className="text-readable text-sm font-medium">{profileData.location}</p>
                 </div>
               </div>
 
@@ -115,7 +115,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">LinkedIn</p>
-                  <p className="text-muted-foreground text-sm font-medium">Connect with me professionally</p>
+                  <p className="text-readable text-sm font-medium">Connect with me professionally</p>
                 </div>
               </div>
 
@@ -128,7 +128,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Resume</p>
-                  <p className="text-muted-foreground text-sm font-medium">Download my latest resume</p>
+                  <p className="text-readable text-sm font-medium">Download my latest resume</p>
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@ const Contact = () => {
                 </Button>
               </form>
 
-              <p className="text-xs text-muted-foreground mt-4 text-center font-medium">
+              <p className="text-xs text-readable mt-4 text-center font-medium">
                 By sending a message, you agree to be contacted regarding your inquiry.
               </p>
             </CardContent>
