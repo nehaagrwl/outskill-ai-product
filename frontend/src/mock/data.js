@@ -56,7 +56,7 @@ export const profileData = {
       company: "EVGateway",
       role: "Program Manager",
       duration: "August 2024 - January 2025",
-      location: "Remote",
+      location: "Irvine, CA, US",
       achievements: [
         "Optimized EV charger utilization by 20% through data-driven insights",
         "Created comprehensive Power BI dashboards for operational efficiency",
@@ -68,7 +68,7 @@ export const profileData = {
       company: "UCLA Anderson - Business Creation Capstone",
       role: "Product Manager",
       duration: "April 2023 - April 2024",
-      location: "Los Angeles, CA",
+      location: "Los Angeles, CA, US",
       achievements: [
         "Developed MVP app prototype for improved pregnancy care access",
         "Won 1st place in flagship pitch competition ($50K funding)",
@@ -80,7 +80,7 @@ export const profileData = {
       company: "KOMMU",
       role: "Product Management Intern",
       duration: "April 2023 - June 2023",
-      location: "Remote",
+      location: "Los Angeles, CA, US",
       achievements: [
         "Launched new mobile app features improving user experience",
         "Conducted extensive user research to identify pain points",
@@ -92,7 +92,7 @@ export const profileData = {
       company: "Bidgely Inc.",
       role: "Associate Product Manager / Senior Data Analyst",
       duration: "July 2017 - July 2022",
-      location: "Fremont, CA",
+      location: "Bengaluru, Karnataka, India",
       achievements: [
         "Spearheaded Looker dashboard development, boosting team productivity by 40%",
         "Led A/B testing initiatives that significantly increased click-through rates",
@@ -142,7 +142,7 @@ export const profileData = {
     },
     {
       id: 2,
-      title: "Bidgely's Proof of Concept Platform",
+      title: "Bidgely Proof-of-Concept Projects",
       description: "Led end-to-end proof of concept projects for global utilities, defining scope to address utility needs and generating actionable insights.",
       outcomes: [
         "Managed 20+ global utility clients successfully",

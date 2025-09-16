@@ -35,7 +35,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div 
-            className="text-xl font-bold text-primary cursor-pointer hover:text-primary-bright transition-colors"
+            className="text-xl font-bold text-teal-bright cursor-pointer hover:text-blue-bright transition-colors"
             onClick={() => scrollToSection('hero')}
           >
             Neha Agrawal
@@ -45,38 +45,38 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground/90 hover:text-primary-bright transition-colors font-medium"
+              className="text-gray-light hover:text-teal-bright transition-colors font-medium"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('experience')}
-              className="text-foreground/90 hover:text-primary-bright transition-colors font-medium"
+              className="text-gray-light hover:text-teal-bright transition-colors font-medium"
             >
               Experience
             </button>
             <button 
               onClick={() => scrollToSection('skills')}
-              className="text-foreground/90 hover:text-primary-bright transition-colors font-medium"
+              className="text-gray-light hover:text-teal-bright transition-colors font-medium"
             >
               Skills
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-foreground/90 hover:text-primary-bright transition-colors font-medium"
+              className="text-gray-light hover:text-teal-bright transition-colors font-medium"
             >
               Projects
             </button>
             <button 
               onClick={handleResumeDownload}
-              className="text-foreground/90 hover:text-primary-bright transition-colors flex items-center gap-1 font-medium"
+              className="text-gray-light hover:text-teal-bright transition-colors flex items-center gap-1 font-medium"
             >
               <Download size={16} />
               Resume
             </button>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-primary hover:bg-primary-bright text-background px-6 py-2 transition-all duration-200 font-semibold"
+              className="bg-teal-bright hover:bg-teal-bright/90 text-background px-6 py-2 transition-all duration-200 font-semibold"
             >
               Contact
             </Button>
@@ -84,7 +84,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground hover:text-primary-bright transition-colors"
+            className="md:hidden p-2 text-gray-light hover:text-teal-bright transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -97,38 +97,38 @@ const Header = () => {
             <div className="flex flex-col space-y-3 pt-4">
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-left text-foreground/90 hover:text-primary-bright transition-colors py-2 font-medium"
+                className="text-left text-gray-light hover:text-teal-bright transition-colors py-2 font-medium"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('experience')}
-                className="text-left text-foreground/90 hover:text-primary-bright transition-colors py-2 font-medium"
+                className="text-left text-gray-light hover:text-teal-bright transition-colors py-2 font-medium"
               >
                 Experience
               </button>
               <button 
                 onClick={() => scrollToSection('skills')}
-                className="text-left text-foreground/90 hover:text-primary-bright transition-colors py-2 font-medium"
+                className="text-left text-gray-light hover:text-teal-bright transition-colors py-2 font-medium"
               >
                 Skills
               </button>
               <button 
                 onClick={() => scrollToSection('projects')}
-                className="text-left text-foreground/90 hover:text-primary-bright transition-colors py-2 font-medium"
+                className="text-left text-gray-light hover:text-teal-bright transition-colors py-2 font-medium"
               >
                 Projects
               </button>
               <button 
                 onClick={handleResumeDownload}
-                className="text-left text-foreground/90 hover:text-primary-bright transition-colors py-2 flex items-center gap-1 font-medium"
+                className="text-left text-gray-light hover:text-teal-bright transition-colors py-2 flex items-center gap-1 font-medium"
               >
                 <Download size={16} />
                 Resume
               </button>
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className="bg-primary hover:bg-primary-bright text-background w-full mt-2 transition-all duration-200 font-semibold"
+                className="bg-teal-bright hover:bg-teal-bright/90 text-background w-full mt-2 transition-all duration-200 font-semibold"
               >
                 Contact
               </Button>

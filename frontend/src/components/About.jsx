@@ -12,38 +12,38 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-muted/20">
+    <section id="about" className="py-20 section-bg-secondary">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* About Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl font-light text-bright-white mb-6">
+              <h2 className="text-4xl font-light text-white-primary mb-6">
                 About Me
               </h2>
-              <p className="text-lg text-light-gray leading-relaxed font-medium">
+              <p className="text-lg text-gray-light leading-relaxed font-medium">
                 {profileData.about.summary}
               </p>
             </div>
 
             {/* Current Learning Highlight */}
-            <div className="p-6 bg-card rounded-xl border-2 border-primary/30 shadow-lg">
+            <div className="p-6 bg-card rounded-xl border-2 border-teal-bright/30 shadow-xl">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/20 rounded-lg border border-primary/40">
-                  <Sparkles size={20} className="text-primary-bright" />
+                <div className="p-3 bg-teal-bright/20 rounded-lg border border-teal-bright/40">
+                  <Sparkles size={20} className="text-teal-bright" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-bright-white mb-2">
+                  <h3 className="text-lg font-semibold text-white-primary mb-2">
                     {profileData.currentLearning.title}
                   </h3>
-                  <p className="text-light-gray text-sm leading-relaxed mb-3 font-medium">
+                  <p className="text-gray-light text-sm leading-relaxed mb-3 font-medium">
                     {profileData.currentLearning.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {profileData.currentLearning.areas.map((area, index) => (
                       <span 
                         key={index}
-                        className="text-xs bg-primary/20 text-primary-bright px-3 py-1 rounded-full border border-primary/40 font-medium"
+                        className="text-xs bg-teal-bright/20 text-teal-bright px-3 py-1 rounded-full border border-teal-bright/40 font-medium"
                       >
                         {area}
                       </span>
@@ -55,20 +55,20 @@ const About = () => {
 
             {/* Education */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-bright-white">Education</h3>
+              <h3 className="text-2xl font-semibold text-white-primary">Education</h3>
               {profileData.education.map((edu, index) => (
                 <Card key={index} className="border-border shadow-lg hover:shadow-xl transition-shadow bg-card">
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-2">
-                      <h4 className="font-semibold text-bright-white">{edu.degree}</h4>
-                      <span className="text-sm text-light-gray bg-muted px-3 py-1 rounded-full font-medium">
+                      <h4 className="font-semibold text-white-primary">{edu.degree}</h4>
+                      <span className="text-sm text-gray-light bg-muted px-3 py-1 rounded-full font-medium">
                         {edu.year}
                       </span>
                     </div>
-                    <p className="text-light-gray font-medium mb-2">{edu.school}</p>
-                    <p className="text-sm text-light-gray mb-3">{edu.location}</p>
+                    <p className="text-gray-light font-medium mb-2">{edu.school}</p>
+                    <p className="text-sm text-gray-medium mb-3">{edu.location}</p>
                     {edu.concentration && (
-                      <p className="text-sm text-light-gray mb-2">
+                      <p className="text-sm text-gray-light mb-2">
                         <span className="font-semibold">Concentration:</span> {edu.concentration}
                       </p>
                     )}
@@ -77,7 +77,7 @@ const About = () => {
                         {edu.honors.map((honor, honorIndex) => (
                           <span 
                             key={honorIndex}
-                            className="text-xs bg-primary text-background px-2 py-1 rounded font-semibold"
+                            className="text-xs bg-teal-bright text-background px-2 py-1 rounded font-semibold"
                           >
                             {honor}
                           </span>
@@ -94,14 +94,14 @@ const About = () => {
           <div className="space-y-8">
             {/* Key Highlights */}
             <div>
-              <h3 className="text-2xl font-semibold text-bright-white mb-6">Key Highlights</h3>
+              <h3 className="text-2xl font-semibold text-white-primary mb-6">Key Highlights</h3>
               <div className="space-y-4">
                 {highlightIcons.map((item, index) => (
                   <div key={index} className="flex items-start gap-4 p-4 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border">
-                    <div className="p-2 bg-primary/20 rounded-lg border border-primary/30">
-                      <item.icon size={20} className="text-primary-bright" />
+                    <div className="p-2 bg-blue-bright/20 rounded-lg border border-blue-bright/30">
+                      <item.icon size={20} className="text-blue-bright" />
                     </div>
-                    <p className="text-light-gray leading-relaxed font-medium">{item.text}</p>
+                    <p className="text-gray-light leading-relaxed font-medium">{item.text}</p>
                   </div>
                 ))}
               </div>
@@ -109,21 +109,21 @@ const About = () => {
 
             {/* Certifications */}
             <div>
-              <h3 className="text-2xl font-semibold text-bright-white mb-6">Certifications</h3>
+              <h3 className="text-2xl font-semibold text-white-primary mb-6">Certifications</h3>
               <div className="grid gap-3">
                 {profileData.certifications.map((cert, index) => (
                   <div 
                     key={index}
-                    className="p-4 bg-card rounded-lg shadow-sm border-l-4 border-primary hover:shadow-md transition-shadow"
+                    className="p-4 bg-card rounded-lg shadow-sm border-l-4 border-blue-bright hover:shadow-md transition-shadow"
                   >
-                    <p className="text-light-gray font-semibold">{cert}</p>
+                    <p className="text-gray-light font-semibold">{cert}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Approach Section */}
-            <div className="p-6 bg-gradient-to-r from-primary to-secondary text-background rounded-xl shadow-lg">
+            <div className="p-6 bg-gradient-to-r from-teal-bright to-blue-bright text-background rounded-xl shadow-lg">
               <h3 className="text-xl font-semibold mb-4">My Approach</h3>
               <p className="text-background/90 leading-relaxed font-medium">
                 I believe in the power of data-driven decision making combined with user-centric design. 
