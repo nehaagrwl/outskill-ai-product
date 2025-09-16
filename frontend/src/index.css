@@ -20,17 +20,17 @@ code {
 @layer base {
   :root {
         --background: 222 84% 5%;
-        --foreground: 210 40% 98%;
+        --foreground: 0 0% 100%;
         --card: 222 84% 8%;
-        --card-foreground: 210 40% 98%;
+        --card-foreground: 0 0% 100%;
         --popover: 222 84% 8%;
-        --popover-foreground: 210 40% 98%;
+        --popover-foreground: 0 0% 100%;
         --primary: 174 72% 56%;
         --primary-foreground: 222 84% 5%;
         --secondary: 213 84% 65%;
         --secondary-foreground: 222 84% 5%;
         --muted: 217 33% 15%;
-        --muted-foreground: 215 25% 75%;
+        --muted-foreground: 0 0% 90%;
         --accent: 1 83% 70%;
         --accent-foreground: 222 84% 5%;
         --destructive: 0 84.2% 60.2%;
@@ -108,10 +108,10 @@ code {
   .border-secondary-bright {
     border-color: hsl(213 84% 70%);
   }
-  .text-readable {
-    color: hsl(210 40% 85%);
+  .text-bright-white {
+    color: #ffffff;
   }
-  .text-highly-visible {
-    color: hsl(210 40% 92%);
+  .text-light-gray {
+    color: #e5e5e5;
   }
 }

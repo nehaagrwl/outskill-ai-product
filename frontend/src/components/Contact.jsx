@@ -62,10 +62,10 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-muted/20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-light text-foreground mb-4">
+          <h2 className="text-4xl font-light text-bright-white mb-4">
             Let's Connect
           </h2>
-          <p className="text-lg text-highly-visible max-w-2xl mx-auto font-medium">
+          <p className="text-lg text-light-gray max-w-2xl mx-auto font-medium">
             I'm always interested in new opportunities, collaborations, and interesting conversations about product management, analytics, and AI innovations.
           </p>
         </div>
@@ -74,8 +74,8 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-foreground mb-6">Get in Touch</h3>
-              <p className="text-highly-visible leading-relaxed mb-8 font-medium">
+              <h3 className="text-2xl font-semibold text-bright-white mb-6">Get in Touch</h3>
+              <p className="text-light-gray leading-relaxed mb-8 font-medium">
                 Whether you're looking for a product manager, have a project in mind, 
                 or just want to connect about the industry and AI innovations, I'd love to hear from you.
               </p>
@@ -91,8 +91,8 @@ const Contact = () => {
                   <Mail size={20} className="text-primary-bright" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Email</p>
-                  <p className="text-readable text-sm font-medium">{profileData.email}</p>
+                  <p className="font-semibold text-bright-white">Email</p>
+                  <p className="text-light-gray text-sm font-medium">{profileData.email}</p>
                 </div>
               </div>
 
@@ -101,8 +101,8 @@ const Contact = () => {
                   <MapPin size={20} className="text-secondary-bright" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Location</p>
-                  <p className="text-readable text-sm font-medium">{profileData.location}</p>
+                  <p className="font-semibold text-bright-white">Location</p>
+                  <p className="text-light-gray text-sm font-medium">{profileData.location}</p>
                 </div>
               </div>
 
@@ -114,8 +114,8 @@ const Contact = () => {
                   <Linkedin size={20} className="text-primary-bright" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">LinkedIn</p>
-                  <p className="text-readable text-sm font-medium">Connect with me professionally</p>
+                  <p className="font-semibold text-bright-white">LinkedIn</p>
+                  <p className="text-light-gray text-sm font-medium">Connect with me professionally</p>
                 </div>
               </div>
 
@@ -127,8 +127,8 @@ const Contact = () => {
                   <Download size={20} className="text-accent-bright" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Resume</p>
-                  <p className="text-readable text-sm font-medium">Download my latest resume</p>
+                  <p className="font-semibold text-bright-white">Resume</p>
+                  <p className="text-light-gray text-sm font-medium">Download my latest resume</p>
                 </div>
               </div>
             </div>
@@ -149,12 +149,12 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="shadow-lg border-2 border-primary/20 bg-card">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-foreground mb-6">Send a Message</h3>
+              <h3 className="text-xl font-semibold text-bright-white mb-6">Send a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">
+                    <label className="block text-sm font-semibold text-bright-white mb-2">
                       Name *
                     </label>
                     <Input
@@ -164,11 +164,11 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="Your name"
                       required
-                      className="w-full border-border focus:border-primary-bright focus:ring-primary/20 bg-background text-foreground"
+                      className="w-full border-border focus:border-primary-bright focus:ring-primary/20 bg-background text-bright-white"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">
+                    <label className="block text-sm font-semibold text-bright-white mb-2">
                       Email *
                     </label>
                     <Input
@@ -178,13 +178,13 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="your.email@example.com"
                       required
-                      className="w-full border-border focus:border-primary-bright focus:ring-primary/20 bg-background text-foreground"
+                      className="w-full border-border focus:border-primary-bright focus:ring-primary/20 bg-background text-bright-white"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-2">
+                  <label className="block text-sm font-semibold text-bright-white mb-2">
                     Subject *
                   </label>
                   <Input
@@ -194,12 +194,12 @@ const Contact = () => {
                     onChange={handleInputChange}
                     placeholder="What's this about?"
                     required
-                    className="w-full border-border focus:border-primary-bright focus:ring-primary/20 bg-background text-foreground"
+                    className="w-full border-border focus:border-primary-bright focus:ring-primary/20 bg-background text-bright-white"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-2">
+                  <label className="block text-sm font-semibold text-bright-white mb-2">
                     Message *
                   </label>
                   <Textarea
@@ -209,7 +209,7 @@ const Contact = () => {
                     placeholder="Tell me more about your project or inquiry..."
                     rows={5}
                     required
-                    className="w-full resize-none border-border focus:border-primary-bright focus:ring-primary/20 bg-background text-foreground"
+                    className="w-full resize-none border-border focus:border-primary-bright focus:ring-primary/20 bg-background text-bright-white"
                   />
                 </div>
 
@@ -232,7 +232,7 @@ const Contact = () => {
                 </Button>
               </form>
 
-              <p className="text-xs text-readable mt-4 text-center font-medium">
+              <p className="text-xs text-light-gray mt-4 text-center font-medium">
                 By sending a message, you agree to be contacted regarding your inquiry.
               </p>
             </CardContent>
