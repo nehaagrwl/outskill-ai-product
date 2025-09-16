@@ -14,7 +14,7 @@ const Projects = () => {
           <h2 className="text-4xl font-light text-foreground mb-4">
             Featured Projects
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
             Key projects that demonstrate my impact in product management and analytics
           </p>
         </div>
@@ -26,22 +26,22 @@ const Projects = () => {
             return (
               <Card 
                 key={project.id} 
-                className="group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-border bg-card"
+                className="group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-2 border-primary/20 bg-card"
               >
                 <CardContent className="p-0">
                   {/* Project Header */}
-                  <div className="p-6 bg-gradient-to-br from-primary to-secondary text-white">
+                  <div className="p-6 bg-gradient-to-br from-primary to-secondary text-background">
                     <div className="flex items-start justify-between mb-4">
-                      <div className="p-3 bg-white/10 rounded-lg backdrop-blur-sm">
-                        <IconComponent size={24} />
+                      <div className="p-3 bg-background/20 rounded-lg backdrop-blur-sm border border-background/30">
+                        <IconComponent size={24} className="text-background" />
                       </div>
                       <ExternalLink 
                         size={20} 
-                        className="opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer hover:scale-110"
+                        className="opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer hover:scale-110 text-background"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                    <p className="text-gray-200 text-sm leading-relaxed">
+                    <h3 className="text-xl font-semibold mb-2 text-background">{project.title}</h3>
+                    <p className="text-background/90 text-sm leading-relaxed font-medium">
                       {project.description}
                     </p>
                   </div>
@@ -49,12 +49,12 @@ const Projects = () => {
                   {/* Project Content */}
                   <div className="p-6">
                     <div className="mb-4">
-                      <h4 className="font-medium text-foreground mb-3">Key Outcomes:</h4>
+                      <h4 className="font-semibold text-foreground mb-3">Key Outcomes:</h4>
                       <div className="space-y-2">
                         {project.outcomes.map((outcome, outcomeIndex) => (
                           <div key={outcomeIndex} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0"></div>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{outcome}</p>
+                            <div className="w-1.5 h-1.5 bg-primary-bright rounded-full mt-2.5 flex-shrink-0"></div>
+                            <p className="text-sm text-muted-foreground leading-relaxed font-medium">{outcome}</p>
                           </div>
                         ))}
                       </div>
@@ -66,7 +66,7 @@ const Projects = () => {
                           <Badge 
                             key={techIndex} 
                             variant="outline" 
-                            className="text-xs text-foreground border-primary/30 hover:bg-primary/10"
+                            className="text-xs text-foreground border-primary/40 hover:bg-primary/10 font-semibold"
                           >
                             {tech}
                           </Badge>
@@ -82,35 +82,35 @@ const Projects = () => {
 
         {/* Project Stats */}
         <div className="mt-16 grid md:grid-cols-4 gap-6 text-center">
-          <div className="p-6 bg-card rounded-xl shadow-lg border border-border">
-            <div className="text-3xl font-bold text-primary mb-2">$6M+</div>
-            <div className="text-muted-foreground text-sm">Funding Secured</div>
+          <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-primary/20">
+            <div className="text-3xl font-bold text-primary-bright mb-2">$6M+</div>
+            <div className="text-muted-foreground text-sm font-semibold">Funding Secured</div>
           </div>
-          <div className="p-6 bg-card rounded-xl shadow-lg border border-border">
-            <div className="text-3xl font-bold text-secondary mb-2">40%</div>
-            <div className="text-muted-foreground text-sm">Productivity Increase</div>
+          <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-secondary/20">
+            <div className="text-3xl font-bold text-secondary-bright mb-2">40%</div>
+            <div className="text-muted-foreground text-sm font-semibold">Productivity Increase</div>
           </div>
-          <div className="p-6 bg-card rounded-xl shadow-lg border border-border">
-            <div className="text-3xl font-bold text-primary mb-2">20+</div>
-            <div className="text-muted-foreground text-sm">Global Utilities</div>
+          <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-primary/20">
+            <div className="text-3xl font-bold text-primary-bright mb-2">20+</div>
+            <div className="text-muted-foreground text-sm font-semibold">Global Utilities</div>
           </div>
-          <div className="p-6 bg-card rounded-xl shadow-lg border border-border">
-            <div className="text-3xl font-bold text-secondary mb-2">25%</div>
-            <div className="text-muted-foreground text-sm">Revenue Growth</div>
+          <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-secondary/20">
+            <div className="text-3xl font-bold text-secondary-bright mb-2">25%</div>
+            <div className="text-muted-foreground text-sm font-semibold">Revenue Growth</div>
           </div>
         </div>
 
         {/* Call to Action */}
         <div className="mt-16 text-center">
-          <div className="max-w-2xl mx-auto p-8 bg-gradient-to-r from-primary to-secondary text-white rounded-2xl shadow-lg">
+          <div className="max-w-2xl mx-auto p-8 bg-gradient-to-r from-primary to-secondary text-background rounded-2xl shadow-xl border-2 border-primary/30">
             <h3 className="text-2xl font-semibold mb-4">Interested in collaboration?</h3>
-            <p className="text-gray-200 mb-6 leading-relaxed">
+            <p className="text-background/90 mb-6 leading-relaxed font-medium">
               I'm always open to discussing new opportunities and innovative projects 
               in product management, analytics, and AI-powered solutions.
             </p>
             <button 
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-              className="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors shadow-lg"
+              className="bg-background text-primary px-8 py-3 rounded-lg font-bold hover:bg-background/90 transition-colors shadow-lg"
             >
               Let's Connect
             </button>
