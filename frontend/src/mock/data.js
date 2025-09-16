@@ -11,7 +11,7 @@ export const profileData = {
 
   // About Section
   about: {
-    summary: "Highly accomplished Product and Analytics professional with 6+ years of experience in technology and healthcare. I specialize in translating complex data into strategic product decisions, having led cross-functional teams at B2B SaaS companies and early-stage startups. With an MBA from UCLA Anderson and a strong technical background in AI/ML, I bridge the gap between business strategy and technical execution while staying current with Gen AI innovations.",
+    summary: "An Product and Analytics professional with 6+ years of experience in technology and data. I specialize in translating complex data into strategic product decisions, having led cross-functional teams at B2B SaaS companies and early-stage startups. With an MBA from UCLA Anderson and a strong technical background, I bridge the gap between business strategy and technical execution while staying current with Gen AI innovations.",
     highlights: [
       "Full-Time MBA from UCLA Anderson School of Management",
       "6+ years in Product Management and Data Analytics", 
@@ -36,7 +36,6 @@ export const profileData = {
       "Tableau & Looker",
       "Power BI & QuickSight", 
       "Statistical Analysis",
-      "AI/ML Implementation",
       "Data Visualization",
       "Gen AI Tools & LLMs"
     ],
