@@ -32,18 +32,18 @@ const Projects = () => {
               >
                 <CardContent className="p-0">
                   {/* Project Header */}
-                  <div className="p-6 bg-gradient-to-br from-teal-bright to-blue-bright text-background">
+                  <div className="p-6 bg-gradient-to-br from-teal-bright to-blue-bright">
                     <div className="flex items-start justify-between mb-4">
-                      <div className="p-3 bg-background/20 rounded-lg backdrop-blur-sm border border-background/30">
-                        <IconComponent size={24} className="text-background" />
+                      <div className="p-3 bg-white/20 rounded-lg backdrop-blur-sm border border-white/30">
+                        <IconComponent size={24} className="text-white" />
                       </div>
                       <ExternalLink 
                         size={20} 
-                        className="opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer hover:scale-110 text-background"
+                        className="opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer hover:scale-110 text-white"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2 text-background">{project.title}</h3>
-                    <p className="text-background/90 text-sm leading-relaxed font-medium">
+                    <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
+                    <p className="text-white/90 text-sm leading-relaxed font-medium">
                       {project.description}
                     </p>
                   </div>
