@@ -22,53 +22,53 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-card border-t-2 border-primary/20">
+    <footer className="bg-card border-t-2 border-teal-bright/20">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand & Description */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-bright-white">{profileData.name}</h3>
-            <p className="text-light-gray leading-relaxed font-medium">
+            <h3 className="text-xl font-bold text-white-primary">{profileData.name}</h3>
+            <p className="text-gray-light leading-relaxed font-medium">
               Product & Analytics Professional passionate about transforming 
               data into strategic insights and building AI-powered products that drive growth.
             </p>
-            <div className="flex items-center gap-2 text-light-gray">
-              <MapPin size={16} className="text-primary-bright" />
+            <div className="flex items-center gap-2 text-gray-light">
+              <MapPin size={16} className="text-teal-bright" />
               <span className="text-sm font-medium">{profileData.location}</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-bright-white">Quick Links</h4>
+            <h4 className="font-semibold text-white-primary">Quick Links</h4>
             <div className="flex flex-col space-y-2">
               <button 
                 onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
-                className="text-light-gray hover:text-primary-bright transition-colors text-left font-medium"
+                className="text-gray-light hover:text-teal-bright transition-colors text-left font-medium"
               >
                 About Me
               </button>
               <button 
                 onClick={() => document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })}
-                className="text-light-gray hover:text-primary-bright transition-colors text-left font-medium"
+                className="text-gray-light hover:text-teal-bright transition-colors text-left font-medium"
               >
                 Experience
               </button>
               <button 
                 onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}
-                className="text-light-gray hover:text-primary-bright transition-colors text-left font-medium"
+                className="text-gray-light hover:text-teal-bright transition-colors text-left font-medium"
               >
                 Skills
               </button>
               <button 
                 onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
-                className="text-light-gray hover:text-primary-bright transition-colors text-left font-medium"
+                className="text-gray-light hover:text-teal-bright transition-colors text-left font-medium"
               >
                 Projects
               </button>
               <button 
                 onClick={handleResumeDownload}
-                className="text-light-gray hover:text-primary-bright transition-colors text-left flex items-center gap-1 font-medium"
+                className="text-gray-light hover:text-teal-bright transition-colors text-left flex items-center gap-1 font-medium"
               >
                 <Download size={14} />
                 Resume
@@ -78,18 +78,18 @@ const Footer = () => {
 
           {/* Contact & Social */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-bright-white">Let's Connect</h4>
+            <h4 className="font-semibold text-white-primary">Let's Connect</h4>
             <div className="space-y-3">
               <button 
                 onClick={handleEmailClick}
-                className="flex items-center gap-3 text-light-gray hover:text-primary-bright transition-colors"
+                className="flex items-center gap-3 text-gray-light hover:text-teal-bright transition-colors"
               >
                 <Mail size={16} />
                 <span className="text-sm font-medium">{profileData.email}</span>
               </button>
               <button 
                 onClick={handleLinkedInClick}
-                className="flex items-center gap-3 text-light-gray hover:text-primary-bright transition-colors"
+                className="flex items-center gap-3 text-gray-light hover:text-teal-bright transition-colors"
               >
                 <Linkedin size={16} />
                 <span className="text-sm font-medium">LinkedIn Profile</span>
@@ -100,32 +100,32 @@ const Footer = () => {
             <div className="flex gap-4 pt-4">
               <button 
                 onClick={handleEmailClick}
-                className="p-2 bg-muted hover:bg-primary/20 rounded-lg transition-colors border border-primary/20"
+                className="p-2 bg-muted hover:bg-teal-bright/20 rounded-lg transition-colors border border-teal-bright/20"
               >
-                <Mail size={18} className="text-primary-bright" />
+                <Mail size={18} className="text-teal-bright" />
               </button>
               <button 
                 onClick={handleLinkedInClick}
-                className="p-2 bg-muted hover:bg-primary/20 rounded-lg transition-colors border border-primary/20"
+                className="p-2 bg-muted hover:bg-teal-bright/20 rounded-lg transition-colors border border-teal-bright/20"
               >
-                <Linkedin size={18} className="text-primary-bright" />
+                <Linkedin size={18} className="text-teal-bright" />
               </button>
             </div>
           </div>
         </div>
 
-        <div className="border-t-2 border-primary/20 mt-12 pt-8">
+        <div className="border-t-2 border-teal-bright/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2 text-light-gray text-sm">
+            <div className="flex items-center gap-2 text-gray-light text-sm">
               <span className="font-medium">© {currentYear} {profileData.name}. Made with</span>
-              <Heart size={14} className="text-accent-bright" />
+              <Heart size={14} className="text-orange-bright" />
               <span className="font-medium">and React</span>
             </div>
             
-            <div className="flex items-center gap-6 text-sm text-light-gray">
+            <div className="flex items-center gap-6 text-sm text-gray-light">
               <button 
                 onClick={scrollToTop}
-                className="hover:text-primary-bright transition-colors font-medium"
+                className="hover:text-teal-bright transition-colors font-medium"
               >
                 Back to Top
               </button>
