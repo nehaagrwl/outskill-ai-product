@@ -62,7 +62,7 @@ const Contact = () => {
                 <div>
                   <p className="font-semibold text-white-primary text-lg">Location</p>
                   <p className="text-gray-light text-sm font-medium">{profileData.location}</p>
-                  <p className="text-blue-bright text-xs font-medium">Available for remote work</p>
+                  <p className="text-blue-bright text-xs font-medium">Available for new opportunities</p>
                 </div>
               </div>
 
