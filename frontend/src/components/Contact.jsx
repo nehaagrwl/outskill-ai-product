@@ -59,13 +59,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-light text-deep-blue mb-4">
+          <h2 className="text-4xl font-light text-foreground mb-4">
             Let's Connect
           </h2>
-          <p className="text-lg text-charcoal max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             I'm always interested in new opportunities, collaborations, and interesting conversations about product management, analytics, and AI innovations.
           </p>
         </div>
@@ -74,8 +74,8 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-deep-blue mb-6">Get in Touch</h3>
-              <p className="text-charcoal leading-relaxed mb-8">
+              <h3 className="text-2xl font-semibold text-foreground mb-6">Get in Touch</h3>
+              <p className="text-muted-foreground leading-relaxed mb-8">
                 Whether you're looking for a product manager, have a project in mind, 
                 or just want to connect about the industry and AI innovations, I'd love to hear from you.
               </p>
@@ -84,57 +84,57 @@ const Contact = () => {
             {/* Contact Methods */}
             <div className="space-y-4">
               <div 
-                className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-deep-blue/10 hover:border-teal/20"
+                className="flex items-center gap-4 p-4 bg-card rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-border hover:border-primary/20"
                 onClick={handleEmailClick}
               >
-                <div className="p-3 bg-teal/10 rounded-lg">
-                  <Mail size={20} className="text-teal" />
+                <div className="p-3 bg-primary/10 rounded-lg">
+                  <Mail size={20} className="text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-deep-blue">Email</p>
-                  <p className="text-charcoal text-sm">{profileData.email}</p>
+                  <p className="font-medium text-foreground">Email</p>
+                  <p className="text-muted-foreground text-sm">{profileData.email}</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-deep-blue/10">
-                <div className="p-3 bg-deep-blue/10 rounded-lg">
-                  <MapPin size={20} className="text-deep-blue" />
+              <div className="flex items-center gap-4 p-4 bg-card rounded-lg shadow-sm border border-border">
+                <div className="p-3 bg-secondary/10 rounded-lg">
+                  <MapPin size={20} className="text-secondary" />
                 </div>
                 <div>
-                  <p className="font-medium text-deep-blue">Location</p>
-                  <p className="text-charcoal text-sm">{profileData.location}</p>
+                  <p className="font-medium text-foreground">Location</p>
+                  <p className="text-muted-foreground text-sm">{profileData.location}</p>
                 </div>
               </div>
 
               <div 
-                className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-deep-blue/10 hover:border-teal/20"
+                className="flex items-center gap-4 p-4 bg-card rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-border hover:border-primary/20"
                 onClick={handleLinkedInClick}
               >
-                <div className="p-3 bg-teal/10 rounded-lg">
-                  <Linkedin size={20} className="text-teal" />
+                <div className="p-3 bg-primary/10 rounded-lg">
+                  <Linkedin size={20} className="text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-deep-blue">LinkedIn</p>
-                  <p className="text-charcoal text-sm">Connect with me professionally</p>
+                  <p className="font-medium text-foreground">LinkedIn</p>
+                  <p className="text-muted-foreground text-sm">Connect with me professionally</p>
                 </div>
               </div>
 
               <div 
-                className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-deep-blue/10 hover:border-teal/20"
+                className="flex items-center gap-4 p-4 bg-card rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-border hover:border-accent/20"
                 onClick={handleResumeDownload}
               >
-                <div className="p-3 bg-coral/10 rounded-lg">
-                  <Download size={20} className="text-coral" />
+                <div className="p-3 bg-accent/10 rounded-lg">
+                  <Download size={20} className="text-accent" />
                 </div>
                 <div>
-                  <p className="font-medium text-deep-blue">Resume</p>
-                  <p className="text-charcoal text-sm">Download my latest resume</p>
+                  <p className="font-medium text-foreground">Resume</p>
+                  <p className="text-muted-foreground text-sm">Download my latest resume</p>
                 </div>
               </div>
             </div>
 
             {/* Quick Response Info */}
-            <div className="p-6 bg-gradient-to-r from-deep-blue to-teal text-white rounded-xl">
+            <div className="p-6 bg-primary text-white rounded-xl">
               <div className="flex items-center gap-3 mb-3">
                 <CheckCircle size={20} />
                 <h4 className="font-medium">Quick Response</h4>
@@ -147,14 +147,14 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="shadow-lg border-0">
+          <Card className="shadow-lg border-border bg-card">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-deep-blue mb-6">Send a Message</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-6">Send a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-deep-blue mb-2">
+                    <label className="block text-sm font-medium text-foreground mb-2">
                       Name *
                     </label>
                     <Input
@@ -164,11 +164,11 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="Your name"
                       required
-                      className="w-full border-deep-blue/20 focus:border-teal focus:ring-teal/20"
+                      className="w-full border-border focus:border-primary focus:ring-primary/20 bg-background"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-deep-blue mb-2">
+                    <label className="block text-sm font-medium text-foreground mb-2">
                       Email *
                     </label>
                     <Input
@@ -178,13 +178,13 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="your.email@example.com"
                       required
-                      className="w-full border-deep-blue/20 focus:border-teal focus:ring-teal/20"
+                      className="w-full border-border focus:border-primary focus:ring-primary/20 bg-background"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-deep-blue mb-2">
+                  <label className="block text-sm font-medium text-foreground mb-2">
                     Subject *
                   </label>
                   <Input
@@ -194,12 +194,12 @@ const Contact = () => {
                     onChange={handleInputChange}
                     placeholder="What's this about?"
                     required
-                    className="w-full border-deep-blue/20 focus:border-teal focus:ring-teal/20"
+                    className="w-full border-border focus:border-primary focus:ring-primary/20 bg-background"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-deep-blue mb-2">
+                  <label className="block text-sm font-medium text-foreground mb-2">
                     Message *
                   </label>
                   <Textarea
@@ -209,14 +209,14 @@ const Contact = () => {
                     placeholder="Tell me more about your project or inquiry..."
                     rows={5}
                     required
-                    className="w-full resize-none border-deep-blue/20 focus:border-teal focus:ring-teal/20"
+                    className="w-full resize-none border-border focus:border-primary focus:ring-primary/20 bg-background"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-deep-blue hover:bg-teal text-white py-3 transition-all duration-200"
+                  className="w-full bg-primary hover:bg-secondary text-white py-3 transition-all duration-200"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
@@ -232,7 +232,7 @@ const Contact = () => {
                 </Button>
               </form>
 
-              <p className="text-xs text-gray-500 mt-4 text-center">
+              <p className="text-xs text-muted-foreground mt-4 text-center">
                 By sending a message, you agree to be contacted regarding your inquiry.
               </p>
             </CardContent>
