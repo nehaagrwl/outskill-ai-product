@@ -11,10 +11,10 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-light text-foreground mb-4">
+          <h2 className="text-4xl font-light text-bright-white mb-4">
             Featured Projects
           </h2>
-          <p className="text-lg text-highly-visible max-w-2xl mx-auto font-medium">
+          <p className="text-lg text-light-gray max-w-2xl mx-auto font-medium">
             Key projects that demonstrate my impact in product management and analytics
           </p>
         </div>
@@ -49,12 +49,12 @@ const Projects = () => {
                   {/* Project Content */}
                   <div className="p-6">
                     <div className="mb-4">
-                      <h4 className="font-semibold text-foreground mb-3">Key Outcomes:</h4>
+                      <h4 className="font-semibold text-bright-white mb-3">Key Outcomes:</h4>
                       <div className="space-y-2">
                         {project.outcomes.map((outcome, outcomeIndex) => (
                           <div key={outcomeIndex} className="flex items-start gap-2">
                             <div className="w-1.5 h-1.5 bg-primary-bright rounded-full mt-2.5 flex-shrink-0"></div>
-                            <p className="text-sm text-readable leading-relaxed font-medium">{outcome}</p>
+                            <p className="text-sm text-light-gray leading-relaxed font-medium">{outcome}</p>
                           </div>
                         ))}
                       </div>
@@ -66,7 +66,7 @@ const Projects = () => {
                           <Badge 
                             key={techIndex} 
                             variant="outline" 
-                            className="text-xs text-foreground border-primary/40 hover:bg-primary/10 font-semibold"
+                            className="text-xs text-bright-white border-primary/40 hover:bg-primary/10 font-semibold"
                           >
                             {tech}
                           </Badge>
@@ -84,19 +84,19 @@ const Projects = () => {
         <div className="mt-16 grid md:grid-cols-4 gap-6 text-center">
           <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-primary/20">
             <div className="text-3xl font-bold text-primary-bright mb-2">$6M+</div>
-            <div className="text-readable text-sm font-semibold">Funding Secured</div>
+            <div className="text-light-gray text-sm font-semibold">Funding Secured</div>
           </div>
           <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-secondary/20">
             <div className="text-3xl font-bold text-secondary-bright mb-2">40%</div>
-            <div className="text-readable text-sm font-semibold">Productivity Increase</div>
+            <div className="text-light-gray text-sm font-semibold">Productivity Increase</div>
           </div>
           <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-primary/20">
             <div className="text-3xl font-bold text-primary-bright mb-2">20+</div>
-            <div className="text-readable text-sm font-semibold">Global Utilities</div>
+            <div className="text-light-gray text-sm font-semibold">Global Utilities</div>
           </div>
           <div className="p-6 bg-card rounded-xl shadow-lg border-2 border-secondary/20">
             <div className="text-3xl font-bold text-secondary-bright mb-2">25%</div>
-            <div className="text-readable text-sm font-semibold">Revenue Growth</div>
+            <div className="text-light-gray text-sm font-semibold">Revenue Growth</div>
           </div>
         </div>
 
